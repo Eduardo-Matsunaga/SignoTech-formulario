@@ -28,5 +28,6 @@ sugestao varchar(200)
 
 
 -Coloque o projeto em C:\xampp\htdocs\ em uma pasta chamada "signotech"
+-Agora no navegador http://localhost/signotech/index.html
 
 Função de envio de E-mail para davi@signotech.com.br ainda em desenvolvimento =(
