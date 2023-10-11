@@ -1,0 +1,121 @@
+/*Formulario*/
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    box-sizing:border-box;
+    
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color:#4CAF50 ;
+}
+
+.sugestao{
+    display: flex;
+    align-items: center;
+}
+
+
+input:invalid {
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+  }
+
+input:focus:invalid{
+    box-shadow: none;
+  }
+
+span{
+    margin-top: 1px;
+    color: crimson;
+  }
+
+input:focus{
+    outline: none;
+  }
+
+
+
+
+
+/* pesquisa.php tabela*/
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    #formulario input, .sugestao, h2 {
+      width: 100%;
+    }
+    #formulario label {
+        display: block; 
+        font-size: 16px; 
+      }
+  }
+@media (max-width: 480px) {
+    #formulario input, .sugestao, h2 {
+      width: 100%;
+    }
+    #formulario label {
+        display: block; 
+        font-size: 16px; 
+      }
+  }
+
+    
+
+
